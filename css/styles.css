@@ -373,6 +373,7 @@ img {
 .portfolio-wrap {
   padding: 20px 24px;
   margin: 0 auto;
+  border: 1px solid #EEEEEE;
 }
 
 .portfolio-item {
