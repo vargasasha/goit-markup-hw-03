@@ -13,12 +13,56 @@ body {
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.duty-reset {
+  padding-top: 0px
 }
 
 .current {
@@ -39,8 +83,20 @@ body {
 }
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -49,12 +105,15 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--origin-black);
+  margin-right: 93px;
 }
 .header-logo-word {
   color: var(--accent-color);
 }
 
 .header-list {
+  display: flex;
+  gap: 50px;
 }
 .header-item {
 }
@@ -67,6 +126,8 @@ body {
 }
 
 .header-contact-list {
+  display: flex;
+  gap: 50px;
 }
 .header-contact-item {
 }
@@ -95,6 +156,7 @@ body {
 
 .hero {
   background: var(--second-background-color);
+  padding: 200px 452px;
 }
 
 .hero-title {
@@ -105,6 +167,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -120,6 +183,8 @@ body {
   color: var(--main-background-color);
   background: var(--accent-color);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -127,11 +192,10 @@ body {
   background-color: var(--accent-color);
 }
 
-.about {
-}
 .about-title {
 }
 .about-list {
+  display: flex;
 }
 
 .about-item {
@@ -143,6 +207,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 .about-text {
   font-weight: 400;
@@ -153,6 +218,7 @@ body {
 }
 
 .duty {
+ 
 }
 .duty-title {
   font-weight: 700;
@@ -161,8 +227,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
 }
 .duty-list {
+  display: flex;
+  gap: 30px;
 }
 .duty-item {
 }
@@ -178,8 +247,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 50px;
 }
 .team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-item {
@@ -193,6 +270,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 .team-text {
   font-weight: 400;
@@ -206,6 +284,12 @@ body {
 .footer {
   background: var(--second-background-color);
 }
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -220,13 +304,15 @@ body {
 }
 
 .footer-address {
+  margin-top: 20px;
 }
 
 .footer-list {
   font-style: normal;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-address-link {
   font-weight: 400;
@@ -245,12 +331,18 @@ body {
 
 .portfolio {
 }
+
 .portfolio-title {
 }
 .filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
 }
 
 .filter-item {
+ 
 }
 .filter-btn {
   font-family: inherit;
@@ -267,20 +359,28 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-color: var(--main-background-color);
-background-color: var(--accent-color);
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
 }
+
 .portfolio-item {
+
 }
+
 .portfolio-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -289,5 +389,3 @@ background-color: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
-
