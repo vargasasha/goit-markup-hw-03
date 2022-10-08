@@ -370,6 +370,11 @@ img {
   column-gap: 30px;
 }
 
+.portfolio-wrap {
+  padding: 20px 24px;
+  margin: 0 auto;
+}
+
 .portfolio-item {
 
 }
@@ -380,7 +385,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  margin-bottom: 4px;
+  margin-bottom: 4px;  
 }
 .portfolio-text {
   font-weight: 400;
