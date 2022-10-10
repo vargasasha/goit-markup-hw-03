@@ -128,6 +128,9 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact-list {
@@ -142,6 +145,9 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -161,7 +167,9 @@ a {
 
 .hero {
   background: var(--second-background-color);
-  padding: 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -173,6 +181,10 @@ a {
   text-transform: uppercase;
   color: var(--main-background-color);
   margin-bottom: 30px;
+  max-width: 696px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -181,16 +193,14 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   background: var(--accent-color);
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
   border-color: transparent;
+  padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -202,9 +212,13 @@ a {
 }
 .about-list {
   display: flex;
+  gap: 30px;
 }
 
 .about-item {
+ /* flex-basis: calc( 100% / 4 - 30px); */
+ /* flex-basis: calc( 100% - 30px / 4); */
+ 
 }
 .about-subtitle {
   font-weight: 700;
@@ -360,6 +374,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   border-color: transparent;
+  padding: 6px 22px;
 }
 
 .filter-btn:hover,
