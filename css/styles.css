@@ -3,6 +3,10 @@ body {
   background-color: var(--main-background-color);
 }
 
+* {
+  border: 0px;
+}
+
 :root {
   --main-background-color: #ffffff;
   --second-background-color: #2f303a;
@@ -60,11 +64,13 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /* outline: 2px solid red; */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  /* outline: 2px solid green; */
 }
 
 .duty-reset {
@@ -120,7 +126,6 @@ a {
   gap: 50px;
 }
 .header-item {
-
 }
 .header-link {
   font-weight: 500;
@@ -176,7 +181,6 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
@@ -194,13 +198,13 @@ a {
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   background: var(--accent-color);
   cursor: pointer;
-  border-color: transparent;
   padding: 10px 32px;
+  min-width: 216px;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -216,9 +220,8 @@ a {
 }
 
 .about-item {
- /* flex-basis: calc( 100% / 4 - 30px); */
- /* flex-basis: calc( 100% - 30px / 4); */
- 
+  /* flex-basis: calc( 100% / 4 - 30px); */
+  /* flex-basis: calc( 100% - 30px / 4); */
 }
 .about-subtitle {
   font-weight: 700;
@@ -375,6 +378,8 @@ a {
   cursor: pointer;
   border-color: transparent;
   padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
