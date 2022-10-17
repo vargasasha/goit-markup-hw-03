@@ -220,13 +220,9 @@ a {
   gap: 30px;
 }
 
-.about-list > li {
-  flex-basis: calc((100% -90px) / 4);
+.about-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
-
-/* .about-item {
-  flex-basis: calc((100% -90px) / 4);
-} */
 
 .about-subtitle {
   font-weight: 700;
@@ -398,18 +394,9 @@ a {
   column-gap: 30px;
 }
 
-/* .portfolio-item {
-  flex-basis: calc((100% -60px) / 3);
-} */
-
-.portfolio-list > li {
-  flex-basis: calc((100% -60px) / 3);
+.portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
 }
-
-/* .portfolio-list > li,
-.portfolio-link > div {
-  flex-basis: calc((100% -60px) / 3);
-} */
 
 .portfolio-wrap {
   padding: 20px 24px;
